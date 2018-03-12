@@ -1,9 +1,9 @@
-FROM ubuntu:xenial
+FROM debian:stretch-slim
 MAINTAINER sh@analogic.cz
 
 # inspired by https://github.com/moneroexamples/private-testnet
 
-ADD https://github.com/just-containers/s6-overlay/releases/download/v1.17.2.0/s6-overlay-amd64.tar.gz \
+ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.4.0/s6-overlay-amd64.tar.gz \
     https://downloads.getmonero.org/linux64 \
     /tmp/
 
